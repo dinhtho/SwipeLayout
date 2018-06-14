@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="5dp"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <com.example.pcpv.swipelayout.library.SwipeLayout
+        android:id="@+id/activity_main_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/activity_main_ll_add"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:background="#c62c2c"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_launcher_background"
+                    android:tint="@color/white" />
+
+                <TextView
+                    fontPath="fonts/HelveticaNeueMed.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Add"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_main_ll_edit"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:background="@color/green_sushi"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_launcher_background"
+                    android:tint="@color/white" />
+
+                <TextView
+                    fontPath="fonts/HelveticaNeueMed.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Edit"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_main_ll_delete"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:background="@color/yellow_orange"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_launcher_background"
+                    android:tint="@color/white" />
+
+                <TextView
+                    fontPath="fonts/HelveticaNeueMed.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Delete"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_main_ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/activity_main_tv_title"
+                        fontPath="fonts/HelveticaNeueMed.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Comment"
+                        android:textColor="@color/white"
+                        android:textSize="13.4dp" />
+
+                    <TextView
+                        android:id="@+id/activity_main_tv_content"
+                        fontPath="fonts/HelveticaNeueMed.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Comment"
+                        android:textColor="@color/white_opacity_40"
+                        android:textSize="12.4dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/activity_main_tv_time"
+                    fontPath="fonts/HelveticaNeueMed.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white_opacity_40"
+                    android:textSize="12.4dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.example.pcpv.swipelayout.library.SwipeLayout>
+</LinearLayout>
